@@ -1,6 +1,6 @@
 # AAPlus
 
-**AAPlus** is a cross-language & cross-platform wrapper library for [AA+ (Astronomical Algorithms+)](http://naughter.com/aa.html), a high-precision C++ implementation of Jean Meeus's astronomical algorithms originally developed by **PJ Naughter**. This project provides:
+**AAPlus** is a cross-language & cross-platform wrapper library for [AA+ (Astronomical Algorithms+)](http://naughter.com/aa.html), a high-precision C++ implementation of [Jean Meeus's astronomical algorithms](https://www.amazon.com/Astronomical-Algorithms-Jean-Meeus/dp/0943396611) originally developed by **PJ Naughter**. This project provides:
 
 - A **C language interface** to the AA+ C++ framework
 - A **C# (P/Invoke) wrapper** for seamless integration with .NET applications
