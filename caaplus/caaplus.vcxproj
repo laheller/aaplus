@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\AA+.h" />
+    <ClInclude Include="src\AA2DCoordinate.h" />
+    <ClInclude Include="src\AA3DCoordinate.h" />
+    <ClInclude Include="src\AAAberration.h" />
+    <ClInclude Include="src\AAAngularSeparation.h" />
+    <ClInclude Include="src\AABinaryStar.h" />
+    <ClInclude Include="src\AACoordinateTransformation.h" />
+    <ClInclude Include="src\AADate.h" />
+    <ClInclude Include="src\AADefines.h" />
+    <ClInclude Include="src\AADiameters.h" />
+    <ClInclude Include="src\AADynamicalTime.h" />
+    <ClInclude Include="src\AAEarth.h" />
+    <ClInclude Include="src\AAEaster.h" />
+    <ClInclude Include="src\AAEclipses.h" />
+    <ClInclude Include="src\AAEclipticalElements.h" />
+    <ClInclude Include="src\AAElementsPlanetaryOrbit.h" />
+    <ClInclude Include="src\AAElliptical.h" />
+    <ClInclude Include="src\AAELP2000.h" />
+    <ClInclude Include="src\AAELPMPP02.h" />
+    <ClInclude Include="src\AAEquationOfTime.h" />
+    <ClInclude Include="src\AAEquinoxesAndSolstices.h" />
+    <ClInclude Include="src\AAEquinoxesAndSolstices2.h" />
+    <ClInclude Include="src\AAFK5.h" />
+    <ClInclude Include="src\AAGalileanMoons.h" />
+    <ClInclude Include="src\AAGlobe.h" />
+    <ClInclude Include="src\AAIlluminatedFraction.h" />
+    <ClInclude Include="src\AAInterpolate.h" />
+    <ClInclude Include="src\AAJewishCalendar.h" />
+    <ClInclude Include="src\AAJupiter.h" />
+    <ClInclude Include="src\AAKepler.h" />
+    <ClInclude Include="src\AAMars.h" />
+    <ClInclude Include="src\AAMercury.h" />
+    <ClInclude Include="src\AAMoon.h" />
+    <ClInclude Include="src\AAMoonIlluminatedFraction.h" />
+    <ClInclude Include="src\AAMoonMaxDeclinations.h" />
+    <ClInclude Include="src\AAMoonMaxDeclinations2.h" />
+    <ClInclude Include="src\AAMoonNodes.h" />
+    <ClInclude Include="src\AAMoonNodes2.h" />
+    <ClInclude Include="src\AAMoonPerigeeApogee.h" />
+    <ClInclude Include="src\AAMoonPerigeeApogee2.h" />
+    <ClInclude Include="src\AAMoonPhases.h" />
+    <ClInclude Include="src\AAMoonPhases2.h" />
+    <ClInclude Include="src\AAMoslemCalendar.h" />
+    <ClInclude Include="src\AANearParabolic.h" />
+    <ClInclude Include="src\AANeptune.h" />
+    <ClInclude Include="src\AANodes.h" />
+    <ClInclude Include="src\AANutation.h" />
+    <ClInclude Include="src\AAParabolic.h" />
+    <ClInclude Include="src\AAParallactic.h" />
+    <ClInclude Include="src\AAParallax.h" />
+    <ClInclude Include="src\AAPhysicalJupiter.h" />
+    <ClInclude Include="src\AAPhysicalMars.h" />
+    <ClInclude Include="src\AAPhysicalMoon.h" />
+    <ClInclude Include="src\AAPhysicalSun.h" />
+    <ClInclude Include="src\AAPlanetaryPhenomena.h" />
+    <ClInclude Include="src\AAPlanetaryPhenomena2.h" />
+    <ClInclude Include="src\AAPlanetPerihelionAphelion.h" />
+    <ClInclude Include="src\AAPlanetPerihelionAphelion2.h" />
+    <ClInclude Include="src\AAPluto.h" />
+    <ClInclude Include="src\AAPrecession.h" />
+    <ClInclude Include="src\AARefraction.h" />
+    <ClInclude Include="src\AARiseTransitSet.h" />
+    <ClInclude Include="src\AARiseTransitSet2.h" />
+    <ClInclude Include="src\AASaturn.h" />
+    <ClInclude Include="src\AASaturnMoons.h" />
+    <ClInclude Include="src\AASaturnRings.h" />
+    <ClInclude Include="src\AASidereal.h" />
+    <ClInclude Include="src\AAStellarMagnitudes.h" />
+    <ClInclude Include="src\AASun.h" />
+    <ClInclude Include="src\AAUranus.h" />
+    <ClInclude Include="src\AAVenus.h" />
+    <ClInclude Include="src\AAVSOP2013.h" />
+    <ClInclude Include="src\AAVSOP87.h" />
+    <ClInclude Include="src\AAVSOP87A_EAR.h" />
+    <ClInclude Include="src\AAVSOP87A_EMB.h" />
+    <ClInclude Include="src\AAVSOP87A_JUP.h" />
+    <ClInclude Include="src\AAVSOP87A_MAR.h" />
+    <ClInclude Include="src\AAVSOP87A_MER.h" />
+    <ClInclude Include="src\AAVSOP87A_NEP.h" />
+    <ClInclude Include="src\AAVSOP87A_SAT.h" />
+    <ClInclude Include="src\AAVSOP87A_URA.h" />
+    <ClInclude Include="src\AAVSOP87A_VEN.h" />
+    <ClInclude Include="src\AAVSOP87B_EAR.h" />
+    <ClInclude Include="src\AAVSOP87B_JUP.h" />
+    <ClInclude Include="src\AAVSOP87B_MAR.h" />
+    <ClInclude Include="src\AAVSOP87B_MER.h" />
+    <ClInclude Include="src\AAVSOP87B_NEP.h" />
+    <ClInclude Include="src\AAVSOP87B_SAT.h" />
+    <ClInclude Include="src\AAVSOP87B_URA.h" />
+    <ClInclude Include="src\AAVSOP87B_VEN.h" />
+    <ClInclude Include="src\AAVSOP87C_EAR.h" />
+    <ClInclude Include="src\AAVSOP87C_JUP.h" />
+    <ClInclude Include="src\AAVSOP87C_MAR.h" />
+    <ClInclude Include="src\AAVSOP87C_MER.h" />
+    <ClInclude Include="src\AAVSOP87C_NEP.h" />
+    <ClInclude Include="src\AAVSOP87C_SAT.h" />
+    <ClInclude Include="src\AAVSOP87C_URA.h" />
+    <ClInclude Include="src\AAVSOP87C_VEN.h" />
+    <ClInclude Include="src\AAVSOP87D_EAR.h" />
+    <ClInclude Include="src\AAVSOP87D_JUP.h" />
+    <ClInclude Include="src\AAVSOP87D_MAR.h" />
+    <ClInclude Include="src\AAVSOP87D_MER.h" />
+    <ClInclude Include="src\AAVSOP87D_NEP.h" />
+    <ClInclude Include="src\AAVSOP87D_SAT.h" />
+    <ClInclude Include="src\AAVSOP87D_URA.h" />
+    <ClInclude Include="src\AAVSOP87D_VEN.h" />
+    <ClInclude Include="src\AAVSOP87E_EAR.h" />
+    <ClInclude Include="src\AAVSOP87E_JUP.h" />
+    <ClInclude Include="src\AAVSOP87E_MAR.h" />
+    <ClInclude Include="src\AAVSOP87E_MER.h" />
+    <ClInclude Include="src\AAVSOP87E_NEP.h" />
+    <ClInclude Include="src\AAVSOP87E_SAT.h" />
+    <ClInclude Include="src\AAVSOP87E_SUN.h" />
+    <ClInclude Include="src\AAVSOP87E_URA.h" />
+    <ClInclude Include="src\AAVSOP87E_VEN.h" />
+    <ClInclude Include="src\AAVSOP87_EMB.h" />
+    <ClInclude Include="src\AAVSOP87_JUP.h" />
+    <ClInclude Include="src\AAVSOP87_MAR.h" />
+    <ClInclude Include="src\AAVSOP87_MER.h" />
+    <ClInclude Include="src\AAVSOP87_NEP.h" />
+    <ClInclude Include="src\AAVSOP87_SAT.h" />
+    <ClInclude Include="src\AAVSOP87_URA.h" />
+    <ClInclude Include="src\AAVSOP87_VEN.h" />
+    <ClInclude Include="src\CWrapper.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\AA+.cpp" />
+    <ClCompile Include="src\AAAberration.cpp" />
+    <ClCompile Include="src\AAAngularSeparation.cpp" />
+    <ClCompile Include="src\AABinaryStar.cpp" />
+    <ClCompile Include="src\AACoordinateTransformation.cpp" />
+    <ClCompile Include="src\AADate.cpp" />
+    <ClCompile Include="src\AADiameters.cpp" />
+    <ClCompile Include="src\AADynamicalTime.cpp" />
+    <ClCompile Include="src\AAEarth.cpp" />
+    <ClCompile Include="src\AAEclipses.cpp" />
+    <ClCompile Include="src\AAEclipticalElements.cpp" />
+    <ClCompile Include="src\AAElementsPlanetaryOrbit.cpp" />
+    <ClCompile Include="src\AAElliptical.cpp" />
+    <ClCompile Include="src\AAELP2000.cpp" />
+    <ClCompile Include="src\AAELPMPP02.cpp" />
+    <ClCompile Include="src\AAEquationOfTime.cpp" />
+    <ClCompile Include="src\AAEquinoxesAndSolstices.cpp" />
+    <ClCompile Include="src\AAEquinoxesAndSolstices2.cpp" />
+    <ClCompile Include="src\AAFK5.cpp" />
+    <ClCompile Include="src\AAGalileanMoons.cpp" />
+    <ClCompile Include="src\AAGlobe.cpp" />
+    <ClCompile Include="src\AAIlluminatedFraction.cpp" />
+    <ClCompile Include="src\AAInterpolate.cpp" />
+    <ClCompile Include="src\AAJewishCalendar.cpp" />
+    <ClCompile Include="src\AAJupiter.cpp" />
+    <ClCompile Include="src\AAKepler.cpp" />
+    <ClCompile Include="src\AAMars.cpp" />
+    <ClCompile Include="src\AAMercury.cpp" />
+    <ClCompile Include="src\AAMoon.cpp" />
+    <ClCompile Include="src\AAMoonIlluminatedFraction.cpp" />
+    <ClCompile Include="src\AAMoonMaxDeclinations.cpp" />
+    <ClCompile Include="src\AAMoonMaxDeclinations2.cpp" />
+    <ClCompile Include="src\AAMoonNodes.cpp" />
+    <ClCompile Include="src\AAMoonNodes2.cpp" />
+    <ClCompile Include="src\AAMoonPerigeeApogee.cpp" />
+    <ClCompile Include="src\AAMoonPerigeeApogee2.cpp" />
+    <ClCompile Include="src\AAMoonPhases.cpp" />
+    <ClCompile Include="src\AAMoonPhases2.cpp" />
+    <ClCompile Include="src\AAMoslemCalendar.cpp" />
+    <ClCompile Include="src\AANearParabolic.cpp" />
+    <ClCompile Include="src\AANeptune.cpp" />
+    <ClCompile Include="src\AANodes.cpp" />
+    <ClCompile Include="src\AANutation.cpp" />
+    <ClCompile Include="src\AAParabolic.cpp" />
+    <ClCompile Include="src\AAParallactic.cpp" />
+    <ClCompile Include="src\AAParallax.cpp" />
+    <ClCompile Include="src\AAPhysicalJupiter.cpp" />
+    <ClCompile Include="src\AAPhysicalMars.cpp" />
+    <ClCompile Include="src\AAPhysicalMoon.cpp" />
+    <ClCompile Include="src\AAPhysicalSun.cpp" />
+    <ClCompile Include="src\AAPlanetaryPhenomena.cpp" />
+    <ClCompile Include="src\AAPlanetaryPhenomena2.cpp" />
+    <ClCompile Include="src\AAPlanetPerihelionAphelion.cpp" />
+    <ClCompile Include="src\AAPlanetPerihelionAphelion2.cpp" />
+    <ClCompile Include="src\AAPluto.cpp" />
+    <ClCompile Include="src\AAPrecession.cpp" />
+    <ClCompile Include="src\AARefraction.cpp" />
+    <ClCompile Include="src\AARiseTransitSet.cpp" />
+    <ClCompile Include="src\AARiseTransitSet2.cpp" />
+    <ClCompile Include="src\AASaturn.cpp" />
+    <ClCompile Include="src\AASaturnMoons.cpp" />
+    <ClCompile Include="src\AASaturnRings.cpp" />
+    <ClCompile Include="src\AASidereal.cpp" />
+    <ClCompile Include="src\AAStellarMagnitudes.cpp" />
+    <ClCompile Include="src\AASun.cpp" />
+    <ClCompile Include="src\AAUranus.cpp" />
+    <ClCompile Include="src\AAVenus.cpp" />
+    <ClCompile Include="src\AAVSOP2013.cpp" />
+    <ClCompile Include="src\AAVSOP87.cpp" />
+    <ClCompile Include="src\AAVSOP87A_EAR.cpp" />
+    <ClCompile Include="src\AAVSOP87A_EMB.cpp" />
+    <ClCompile Include="src\AAVSOP87A_JUP.cpp" />
+    <ClCompile Include="src\AAVSOP87A_MAR.cpp" />
+    <ClCompile Include="src\AAVSOP87A_MER.cpp" />
+    <ClCompile Include="src\AAVSOP87A_NEP.cpp" />
+    <ClCompile Include="src\AAVSOP87A_SAT.cpp" />
+    <ClCompile Include="src\AAVSOP87A_URA.cpp" />
+    <ClCompile Include="src\AAVSOP87A_VEN.cpp" />
+    <ClCompile Include="src\AAVSOP87B_EAR.cpp" />
+    <ClCompile Include="src\AAVSOP87B_JUP.cpp" />
+    <ClCompile Include="src\AAVSOP87B_MAR.cpp" />
+    <ClCompile Include="src\AAVSOP87B_MER.cpp" />
+    <ClCompile Include="src\AAVSOP87B_NEP.cpp" />
+    <ClCompile Include="src\AAVSOP87B_SAT.cpp" />
+    <ClCompile Include="src\AAVSOP87B_URA.cpp" />
+    <ClCompile Include="src\AAVSOP87B_VEN.cpp" />
+    <ClCompile Include="src\AAVSOP87C_EAR.cpp" />
+    <ClCompile Include="src\AAVSOP87C_JUP.cpp" />
+    <ClCompile Include="src\AAVSOP87C_MAR.cpp" />
+    <ClCompile Include="src\AAVSOP87C_MER.cpp" />
+    <ClCompile Include="src\AAVSOP87C_NEP.cpp" />
+    <ClCompile Include="src\AAVSOP87C_SAT.cpp" />
+    <ClCompile Include="src\AAVSOP87C_URA.cpp" />
+    <ClCompile Include="src\AAVSOP87C_VEN.cpp" />
+    <ClCompile Include="src\AAVSOP87D_EAR.cpp" />
+    <ClCompile Include="src\AAVSOP87D_JUP.cpp" />
+    <ClCompile Include="src\AAVSOP87D_MAR.cpp" />
+    <ClCompile Include="src\AAVSOP87D_MER.cpp" />
+    <ClCompile Include="src\AAVSOP87D_NEP.cpp" />
+    <ClCompile Include="src\AAVSOP87D_SAT.cpp" />
+    <ClCompile Include="src\AAVSOP87D_URA.cpp" />
+    <ClCompile Include="src\AAVSOP87D_VEN.cpp" />
+    <ClCompile Include="src\AAVSOP87E_EAR.cpp" />
+    <ClCompile Include="src\AAVSOP87E_JUP.cpp" />
+    <ClCompile Include="src\AAVSOP87E_MAR.cpp" />
+    <ClCompile Include="src\AAVSOP87E_MER.cpp" />
+    <ClCompile Include="src\AAVSOP87E_NEP.cpp" />
+    <ClCompile Include="src\AAVSOP87E_SAT.cpp" />
+    <ClCompile Include="src\AAVSOP87E_SUN.cpp" />
+    <ClCompile Include="src\AAVSOP87E_URA.cpp" />
+    <ClCompile Include="src\AAVSOP87E_VEN.cpp" />
+    <ClCompile Include="src\AAVSOP87_EMB.cpp" />
+    <ClCompile Include="src\AAVSOP87_JUP.cpp" />
+    <ClCompile Include="src\AAVSOP87_MAR.cpp" />
+    <ClCompile Include="src\AAVSOP87_MER.cpp" />
+    <ClCompile Include="src\AAVSOP87_NEP.cpp" />
+    <ClCompile Include="src\AAVSOP87_SAT.cpp" />
+    <ClCompile Include="src\AAVSOP87_URA.cpp" />
+    <ClCompile Include="src\AAVSOP87_VEN.cpp" />
+    <ClCompile Include="src\stdafx.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{01b0727d-82fc-4cf5-811f-6a78eede74a5}</ProjectGuid>
+    <RootNamespace>aaplus</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>caaplus</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>CWRAPPER;WIN32;_DEBUG;AAPLUS_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>CWRAPPER;WIN32;NDEBUG;AAPLUS_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>CWRAPPER;_DEBUG;AAPLUS_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>CWRAPPER;NDEBUG;AAPLUS_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
