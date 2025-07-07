@@ -17,8 +17,8 @@ The goal is to make AA+ functionality accessible from C and C# environments, ena
 ## Repository Structure
 
 AAPlus/<br/>
+├── AAPlusLib/ -> .NET P/Invoke C# bindings as a .NET netstandard library project<br/>
 ├── caaplus/ -> Original AA+ C++ source by PJ Naughter extended with C-language wrapper as a Visual C++ project<br/>
-├── AAPlusLib/ -> .NET P/Invoke C# bindings as a .NET netsandard library project<br/>
 ├── test/ -> Example C# console application<br/>
 ├── README.md -> this file<br/>
 └── aaplus.sln -> Visual Studio 2022 solution file<br/>
