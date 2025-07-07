@@ -908,8 +908,8 @@ namespace AAPlus {
         [DllImport(LibName, EntryPoint = "CAAElliptical_MeanMotionFromSemiMajorAxis")]
         public static extern double MeanMotionFromSemiMajorAxis(double a);
 
-        [DllImport(LibName, EntryPoint = "CAAElliptical_Calculate")]
-        public static extern AAEllipticalObjectDetails Calculate(double JD, ref AAEllipticalObjectElements elements, bool bHighPrecision);
+        [DllImport(LibName, EntryPoint = "CAAElliptical_Calculate_2")]
+        public static extern AAEllipticalObjectDetails Calculate_2(double JD, ref AAEllipticalObjectElements elements, bool bHighPrecision);
 
         [DllImport(LibName, EntryPoint = "CAAElliptical_InstantaneousVelocity")]
         public static extern double InstantaneousVelocity(double r, double a);
