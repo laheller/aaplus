@@ -4,13 +4,15 @@
 
 - A **C language interface** to the AA+ C++ framework
 - A **C# (P/Invoke) wrapper** for seamless integration with .NET applications
+- A **Python wrapper** module for seamless integration with Python applications
 
-The goal is to make AA+ functionality accessible from C and C# environments, enabling high-precision astronomical calculations in both native and managed codebases.
+The goal is to make AA+ functionality accessible from C, C# and Python environments, enabling high-precision astronomical calculations in both native and managed codebases.
 
 ## Features
 
 - Clean C interface layered over the C++ implementation
 - P/Invoke-based C# wrapper for .NET applications
+- Ctypes-based Python wrapper module for Python applications
 - Access to key AA+ modules: Sun, Moon, planets, coordinate transformations, etc.
 - Cross-platform support: Works on both Windows & Linux
 
@@ -19,6 +21,7 @@ The goal is to make AA+ functionality accessible from C and C# environments, ena
 AAPlus/<br/>
 ├── AAPlusLib/ -> .NET P/Invoke C# bindings as a .NET netstandard library project<br/>
 ├── caaplus/ -> Original AA+ C++ source by PJ Naughter extended with C-language wrapper as a Visual C++ project<br/>
+├── python/ -> Python module and test code<br/>
 ├── test/ -> Example C# console application<br/>
 ├── README.md -> this file<br/>
 └── aaplus.sln -> Visual Studio 2022 solution file<br/>
