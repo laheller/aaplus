@@ -23,7 +23,7 @@ print()
 # various tests for the current date/time 
 aadate = AADate(now.year, now.month, now.day, now.hour, now.minute, now.second, True)
 parts = aadate.Get()
-print(f'Details for the current date/time: {parts['Year']}-{parts['Month']}-{parts['Day']} {parts['Hour']}:{parts['Minute']}:{parts['Second']:.3f} UTC')
+print(f"Details for the current date/time: {parts['Year']}-{parts['Month']}-{parts['Day']} {parts['Hour']}:{parts['Minute']}:{parts['Second']:.3f} UTC")
 print(f'Day of week: {aadate.DayOfWeek()}')
 print(f'Days in this year: {aadate.DaysInYear()}')
 print(f'Fractional year: {aadate.FractionalYear()}')
@@ -33,13 +33,13 @@ print(f'Is a Gregorian date: {aadate.InGregorianCalendar()}')
 
 DayNum = 66
 res = AADate.DayOfYearToDayAndMonth(DayNum, False)
-print(f'The {DayNum}. day of the year is on {res['DayOfMonth']}. of {Months(res['Month']).name}.')
+print(f"The {DayNum}. day of the year is on {res['DayOfMonth']}. of {Months(res['Month']).name}.")
 print()
 
 # get the 2025 March Equinox time
 MarchEquinoxTT = AAEquinoxesAndSolstices.NorthwardEquinox(2025, True)
 parts = AADate.JDToDateParts(AADynamicalTime.TT2UTC(MarchEquinoxTT), True)
-print(f'2025 March Equinox occurs on {AADate.TT2DateTimeUTC(MarchEquinoxTT).strftime('%Y-%b-%d %H:%M:%S')} UTC')
+print(f"2025 March Equinox occurs on {AADate.TT2DateTimeUTC(MarchEquinoxTT).strftime('%Y-%b-%d %H:%M:%S')} UTC")
 print()
 
 # get 2025 equinoxes and solstices dates
@@ -48,7 +48,7 @@ endJD = AADate.DateTimeUTC2TT(datetime(year=2025, month=12, day=31, hour=23, min
 list = AAEquinoxesAndSolstices2.Calculate(startJD, endJD)
 for x in list:
     print(f'Type: {AAEquinoxesAndSolstices2.Type(x.type).name}')
-    print(f'When: {AADate.TT2DateTimeUTC(x.JD).strftime('%Y-%b-%d %H:%M:%S')} UTC')
+    print(f"When: {AADate.TT2DateTimeUTC(x.JD).strftime('%Y-%b-%d %H:%M:%S')} UTC")
     print()
 
 # get 2025 Easter date
@@ -62,7 +62,7 @@ MPEndJD = AADate.DateTimeUTC2TT(datetime(year=2025, month=5, day=31, hour=0, min
 list = AAMoonPhases2.Calculate(MPStartJD, MPEndJD, 0.007, AAMoonPhases2.Algorithm.ELP2000)
 for x in list:
     print(f'Type: {AAMoonPhases2.Type(x.type).name}')
-    print(f'When: {AADate.TT2DateTimeUTC(x.JD).strftime('%Y-%b-%d %H:%M:%S')} UTC')
+    print(f"When: {AADate.TT2DateTimeUTC(x.JD).strftime('%Y-%b-%d %H:%M:%S')} UTC")
     print()
 
 # Earth velocity test
@@ -181,7 +181,7 @@ mk = 0.5 + math.trunc(AAMoonPhases.K(aadate.FractionalYear())) # + 0.5 is requir
 while True:
     lec = AAEclipses.CalculateLunar(mk)
     if lec.bEclipse:
-        print(f'Maximum of the next Lunar eclipse occurs on {AADate.TT2DateTimeUTC(lec.TimeOfMaximumEclipse).strftime('%Y-%b-%d %H:%M:%S')} UTC')
+        print(f"Maximum of the next Lunar eclipse occurs on {AADate.TT2DateTimeUTC(lec.TimeOfMaximumEclipse).strftime('%Y-%b-%d %H:%M:%S')} UTC")
         print()
         break
     mk += 1.0
@@ -195,7 +195,7 @@ vk = math.trunc(AAPlanetaryPhenomena.K(aadate.FractionalYear(), planet, evt))
 while True:
     EvtDate = AADate.TT2DateTimeUTC(AAPlanetaryPhenomena._True(vk, planet, evt))
     if EvtDate > now:
-        print(f'Venus next {evt.name} occurs on {EvtDate.strftime('%Y-%b-%d %H:%M:%S')} UTC')
+        print(f"Venus next {evt.name} occurs on {EvtDate.strftime('%Y-%b-%d %H:%M:%S')} UTC")
         break
     vk += 1.0
 

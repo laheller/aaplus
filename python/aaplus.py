@@ -1,12 +1,20 @@
 import math
 import os
+import platform
 
 from ctypes import *
 from datetime import *
 from enum import *
 
 parent = os.path.dirname(__file__)
-nativelib = f'{parent}\\caaplus.dll'
+psys = platform.system()
+if psys == 'Linux':
+	nativelib = f'{parent}/libcaaplus.so'
+elif psys == 'Windows':
+	nativelib = f'{parent}\\caaplus.dll'
+else:
+	raise Exception(f'Not supported platform: {psys}!')
+
 try:
 	_aaplus = CDLL(nativelib)
 except:
